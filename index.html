@@ -61,9 +61,9 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a target="_blank" rel="noopener" href="https://y-c-li.github.io/">HOMEPAGE/主页</a></li>
+				<li><a target="_blank" rel="noopener" href="https://y-c-li.github.io/">HOMEPAGE/��ҳ</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">GROCERIES/随笔</a></li>
+				<li><a href="/tags/%EF%BF%BD%EF%BF%BD%EF%BF%BD/">GROCERIES/���</a></li>
 	        
 			</ul>
 		</nav>
@@ -135,9 +135,9 @@
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 50%"><a target="_blank" rel="noopener" href="https://y-c-li.github.io/">HOMEPAGE/主页</a></li>
+					<li style="width: 50%"><a target="_blank" rel="noopener" href="https://y-c-li.github.io/">HOMEPAGE/��ҳ</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">GROCERIES/随笔</a></li>
+					<li style="width: 50%"><a href="/tags/%EF%BF%BD%EF%BF%BD%EF%BF%BD/">GROCERIES/���</a></li>
 		        
 				</ul>
 			</nav>
@@ -153,6 +153,105 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-Wien2K-note1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/09/04/Wien2K-note1/">Wien2K_note1</a>
+    </h1>
+  
+
+        
+        <a href="/2021/09/04/Wien2K-note1/" class="archive-article-date">
+  	<time datetime="2021-09-04T13:35:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="About-MobaXterm"><a href="#About-MobaXterm" class="headerlink" title="About MobaXterm"></a>About MobaXterm</h1><h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1. Introduction"></a>1. Introduction</h2><p>MobaXterm is a powerful ultimate toolbox for remote  computing. MobaXterm provides all the important remote network tools (SSH, RDP, X11, SFTP, FTP, Telnet, Rlogin, …)</p>
+<p>Download <u><a target="_blank" rel="noopener" href="https://mobaxterm.mobatek.net/download.html"><strong>HERE</strong></a></u></p>
+<p>By the way, I used SSH to  connect the LINUX server to do first-principle calculations.</p>
+<p><strong><img src="/2021/09/04/Wien2K-note1/1.png" class></strong></p>
+<h2 id="2-Be-a-quick-Starter"><a href="#2-Be-a-quick-Starter" class="headerlink" title="2. Be a quick Starter"></a>2. Be a quick Starter</h2><h4 id="2-1-Session"><a href="#2-1-Session" class="headerlink" title="2.1 Session"></a>2.1 Session</h4><p>Click on the <u><strong>“Sessions” button</strong></u> to start a new session.</p>
+<p><strong><img src="/2021/09/04/Wien2K-note1/2.png" class></strong></p>
+<p>To configure a SSH connection (take SSH as an example), just click <strong><u>‘SSH’ button</u></strong>:</p>
+<p><strong><img src="/2021/09/04/Wien2K-note1/3.png" class></strong></p>
+<p>After setting the host, username, click <strong><u>OK</u></strong> and enter your password to begin your new connection.</p>
+<h4 id="2-2-Split-View"><a href="#2-2-Split-View" class="headerlink" title="2.2 Split View"></a>2.2 Split View</h4><p>Click <strong><u>“Split” button</u></strong> and select the way of splitting you want. You can multi-view different terminals at the same time. Sounds cool!</p>
+<p><strong><img src="/2021/09/04/Wien2K-note1/4.png" class></strong></p>
+<p>Click <u>the bottom line of each terminal</u> to change different terminals to control.</p>
+<p><strong><img src="/2021/09/04/Wien2K-note1/5.png" class></strong></p>
+<h4 id="2-3-Multi-Execution"><a href="#2-3-Multi-Execution" class="headerlink" title="2.3 Multi-Execution"></a>2.3 Multi-Execution</h4><p>By Clicking the <strong><u>“MuitiExec” button</u></strong>, you can simultaneously command several terminals.</p>
+<p><strong><img src="/2021/09/04/Wien2K-note1/6.png" class></strong></p>
+<p>Note that by <u>ticking the card in red box</u>, you can control certain terminals not to be influenced by your MultiExec-mode commands.</p>
+<h4 id="2-4-Settings"><a href="#2-4-Settings" class="headerlink" title="2.4 Settings"></a>2.4 Settings</h4><p>By clicking <strong><u>“Settings” button</u></strong>, you can set your MobaXterm Home Directory, it’s vital to transport files between your MobaXterm terminal and the Sever. </p>
+<p><strong><img src="/2021/09/04/Wien2K-note1/7.png" class></strong></p>
+<p>Using Command:</p>
+<p><code>scp (-r) filename username@ipaddress: ~</code></p>
+<p>You can transport files (folders) <strong>from your local computer (the directory chosen as MobaXterm Home Directory) to your Sever Home Directory.</strong></p>
+<p>Using Command:</p>
+<p><code>scp (-r) username@ipaddress:filename ~</code></p>
+<p>You can fetch files (folders)  <strong>from your Sever Home Directory to your local computer (the MobaXterm Home Directory).</strong></p>
+<h4 id="2-5-Games"><a href="#2-5-Games" class="headerlink" title="2.5 Games"></a>2.5 Games</h4><p><strong><img src="/2021/09/04/Wien2K-note1/8.png" class></strong></p>
+<p>Click <strong><u>“Games” button</u></strong>, and Enjoy yourself!</p>
+<h5 id="Don’t-worry-Be-happy"><a href="#Don’t-worry-Be-happy" class="headerlink" title="Don’t worry! Be happy!"></a><strong>Don’t worry! Be happy!</strong></h5>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Physics</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/09/04/Wien2K-note1/">չ��ȫ�� >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-所谓生活" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -210,82 +309,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/05/24/%E6%89%80%E8%B0%93%E7%94%9F%E6%B4%BB/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/05/21/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2021/05/21/hello-world/" class="archive-article-date">
-  	<time datetime="2021-05-21T10:01:38.879Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/05/21/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/05/24/%E6%89%80%E8%B0%93%E7%94%9F%E6%B4%BB/">չ��ȫ�� >></a>
         </p>
       
 
@@ -424,6 +448,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">daily life</a>
               </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Physics</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -474,27 +502,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>��������1</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>��������2</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>��������3</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>��������4</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>��������5</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>��������6</a>
             </li>
           
         </ul>
@@ -505,7 +533,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">Hi!&lt;br&gt;&lt;br&gt;This is Yaochen&lt;br&gt;&lt;br&gt;Don&#39;t worry! Be happy!</div>
   	  	
     	</section>
     
