@@ -6,17 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Tag: daily life | Blog of Yaochen-Li</title>
+  <title>Convergence_Diary | Blog of Yaochen-Li</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Just a Blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Blog of Yaochen-Li">
-<meta property="og:url" content="http://example.com/tags/daily-life/index.html">
+  <meta name="description" content="Quantum Espresso Convergence Diary ($Na_{3}Co_{2}SbO_{6}$)I face the problem of bad convergence when doing SCF calculation. To solve the problem, keeping documentary is a good idea …">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Convergence_Diary">
+<meta property="og:url" content="http://example.com/2021/09/06/Convergence-Diary/index.html">
 <meta property="og:site_name" content="Blog of Yaochen-Li">
-<meta property="og:description" content="Just a Blog">
+<meta property="og:description" content="Quantum Espresso Convergence Diary ($Na_{3}Co_{2}SbO_{6}$)I face the problem of bad convergence when doing SCF calculation. To solve the problem, keeping documentary is a good idea …">
 <meta property="og:locale">
+<meta property="og:image" content="http://example.com/2021/09/06/Convergence-Diary/1.png">
+<meta property="og:image" content="http://example.com/2021/09/06/Convergence-Diary/2.png">
+<meta property="article:published_time" content="2021-09-06T01:44:45.000Z">
+<meta property="article:modified_time" content="2021-09-06T14:40:01.040Z">
 <meta property="article:author" content="Yaochen Li">
+<meta property="article:tag" content="Quantum Espresso">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/09/06/Convergence-Diary/1.png">
   
     <link rel="alternative" href="/atom.xml" title="Blog of Yaochen-Li" type="application/atom+xml">
   
@@ -152,60 +158,214 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Convergence-Diary" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/05/24/%E6%89%80%E8%B0%93%E7%94%9F%E6%B4%BB/" class="archive-article-date">
-  	<time datetime="2021-05-24T14:50:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-24</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/05/24/%E6%89%80%E8%B0%93%E7%94%9F%E6%B4%BB/">所谓生活</a>
+    <h1 class="article-title" itemprop="name">
+      Convergence_Diary
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2021/09/06/Convergence-Diary/" class="archive-article-date">
+  	<time datetime="2021-09-06T01:44:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Quantum-Espresso-Convergence-Diary-Na-3-Co-2-SbO-6"><a href="#Quantum-Espresso-Convergence-Diary-Na-3-Co-2-SbO-6" class="headerlink" title="Quantum Espresso Convergence Diary ($Na_{3}Co_{2}SbO_{6}$)"></a>Quantum Espresso Convergence Diary ($Na_{3}Co_{2}SbO_{6}$)</h1><p>I face the problem of bad convergence when doing SCF calculation. To solve the problem, keeping documentary is a good idea …</p>
+<span id="more"></span>
+<h3 id="1st-Version"><a href="#1st-Version" class="headerlink" title="1st Version"></a>1st Version</h3><p>Directly tried the SOC with zigzag antimagnetic order, plus LDA+U as below:</p>
+<p><strong><img src="/2021/09/06/Convergence-Diary/1.png" class></strong></p>
+<p>And the pw.x input file below (the input file is done according to Wien2K results):</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line">&amp;CONTROL</span><br><span class="line">! calculation = &#x27;vc-relax&#x27; ,</span><br><span class="line">  calculation = &#x27;scf&#x27; ,</span><br><span class="line">  restart_mode = &#x27;from_scratch&#x27; ,</span><br><span class="line">  outdir = &#x27;./tmp&#x27; ,</span><br><span class="line">  pseudo_dir = &#x27;/home/yaoshen/QEDATA/pslibrary.1.0.0/pslibrary.1.0.0/rel-pbe/PSEUDOPOTENTIALS&#x27; ,</span><br><span class="line">  prefix = &#x27;ncso&#x27;</span><br><span class="line">  etot_conv_thr=0.0001,</span><br><span class="line">  nstep=70</span><br><span class="line"> /</span><br><span class="line"> &amp;SYSTEM</span><br><span class="line">  space_group = 2,</span><br><span class="line">  A = 5.3625060253,</span><br><span class="line">  B = 5.6370003188,</span><br><span class="line">  C = 9.2945940873,</span><br><span class="line">  cosAB = 0.27498 ,</span><br><span class="line">  cosBC = 0.0012 ,</span><br><span class="line">  cosAC = 0.15887 ,</span><br><span class="line">  nat = 13,</span><br><span class="line">  ntyp = 5,</span><br><span class="line">! nbnd = 110,</span><br><span class="line">  ecutwfc = 60.0 ,</span><br><span class="line">  ecutrho = 600.0 ,</span><br><span class="line">  occupations = &#x27;tetrahedra_opt&#x27;,</span><br><span class="line">! occupations = &#x27;smearing&#x27; , degauss = 0.001 , smearing = &#x27;gauss&#x27; ,</span><br><span class="line">  nspin = 4,</span><br><span class="line">  starting_magnetization(1) = 1.0,</span><br><span class="line">  starting_magnetization(2) = -1.0,</span><br><span class="line">  lspinorb = .true.</span><br><span class="line">  noncolin = .true.</span><br><span class="line">  lda_plus_u=.true. , lda_plus_u_kind=1,</span><br><span class="line">  Hubbard_U(1)=4.4, Hubbard_J(1,1)=0,</span><br><span class="line">  Hubbard_U(2)=4.4, Hubbard_J(1,2)=0</span><br><span class="line"> /</span><br><span class="line"> &amp;ELECTRONS</span><br><span class="line"> conv_thr = 1.0e-5 ,</span><br><span class="line"> mixing_beta = 0.7 ,</span><br><span class="line"> electron_maxstep = 130 ,</span><br><span class="line"> mixing_mode = &#x27;local-TF&#x27; ,</span><br><span class="line"> mixing_ndim = 12 ,</span><br><span class="line"> /</span><br><span class="line">! &amp;IONS /</span><br><span class="line">! &amp;CELL /</span><br><span class="line"></span><br><span class="line">ATOMIC_SPECIES</span><br><span class="line">   Co1   58.933200  Co.rel-pbe-spn-kjpaw_psl.1.0.0.UPF</span><br><span class="line">   Co2   58.933200  Co.rel-pbe-spn-kjpaw_psl.1.0.0.UPF</span><br><span class="line">   Sb    121.75000  Sb.rel-pbe-dn-kjpaw_psl.1.0.0.UPF</span><br><span class="line">   Na    22.989770  Na.rel-pbe-spnl-kjpaw_psl.1.0.0.UPF</span><br><span class="line">    O    16.000000  O.rel-pbe-nl-kjpaw_psl.1.0.0.UPF</span><br><span class="line"></span><br><span class="line">K_POINTS automatic</span><br><span class="line">  6 6 6 0 0 0</span><br><span class="line"></span><br><span class="line">ATOMIC_POSITIONS crystal_sg</span><br><span class="line"> Co1 0.25005000 0.00000000 0.41665000</span><br><span class="line"> Co2 0.75005000 0.00000000 0.91665000</span><br><span class="line"> Sb  0.25000000 0.00000000 0.75000000</span><br><span class="line">  O  0.62430000 0.79710000 0.44230000</span><br><span class="line">  O  0.39870000 0.20290000 0.21670000</span><br><span class="line">  O  0.12430000 0.79710000 0.94230000</span><br><span class="line">  O  0.89870000 0.20290000 0.71670000</span><br><span class="line">  O  0.87685000 0.20560000 0.37685000</span><br><span class="line">  O  0.37685000 0.20560000 0.87685000</span><br><span class="line"> Na  0.00000000 0.50000000 0.50000000</span><br><span class="line"> Na  0.50000000 0.50000000 0.00000000</span><br><span class="line"> Na  0.49440000 0.50000000 0.33520000</span><br><span class="line"> Na  0.99440000 0.50000000 0.83520000  </span><br></pre></td></tr></table></figure>
+<p>And the outcome is just not converging. In the first iteration scf accuracy &lt; 3000Ry. So bad! Besides, the speed is very very slow (1.4h for each iteration). </p>
+<h3 id="2nd-Version"><a href="#2nd-Version" class="headerlink" title="2nd Version"></a>2nd Version</h3><p>Maybe it’s not wise to try such complexity at the beginning. So I cut down k-mesh, ecutwfc, and ecutrho (after referring paper). </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line">! calculation = &#x27;vc-relax&#x27; ,</span><br><span class="line">  calculation = &#x27;scf&#x27; ,</span><br><span class="line">  restart_mode = &#x27;from_scratch&#x27; ,</span><br><span class="line">  outdir = &#x27;./tmp&#x27; ,</span><br><span class="line">  pseudo_dir = &#x27;/home/yaoshen/QEDATA/pslibrary.1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS&#x27; ,</span><br><span class="line">  prefix = &#x27;ncso&#x27; </span><br><span class="line">  etot_conv_thr=0.0001,</span><br><span class="line">  nstep=70</span><br><span class="line"> /</span><br><span class="line"> &amp;SYSTEM</span><br><span class="line">  space_group = 2,</span><br><span class="line">  A = 5.3625060253,</span><br><span class="line">  B = 5.6370003188,</span><br><span class="line">  C = 9.2945940873,</span><br><span class="line">  cosAB = 0.27498 ,</span><br><span class="line">  cosBC = 0.0012 ,</span><br><span class="line">  cosAC = 0.15887 ,</span><br><span class="line">  nat = 13,</span><br><span class="line">  ntyp = 5,</span><br><span class="line">! nbnd = 110,</span><br><span class="line">  ecutwfc = 45.0 ,</span><br><span class="line">  ecutrho = 450.0 ,</span><br><span class="line">  occupations = &#x27;tetrahedra_opt&#x27;,</span><br><span class="line">! occupations = &#x27;smearing&#x27; , degauss = 0.001 , smearing = &#x27;gauss&#x27; ,</span><br><span class="line">  nspin = 4,</span><br><span class="line">  starting_magnetization(1) = 1.0,</span><br><span class="line">  starting_magnetization(2) = -1.0,</span><br><span class="line">! lspinorb = .true.</span><br><span class="line">! noncolin = .true.</span><br><span class="line">  lda_plus_u=.true., lda_plus_u_kind=1,</span><br><span class="line">  Hubbard_U(1)=4.4, Hubbard_J(1,1)=0,</span><br><span class="line">  Hubbard_U(2)=4.4, Hubbard_J(1,2)=0</span><br><span class="line"> /</span><br><span class="line"> &amp;ELECTRONS</span><br><span class="line"> conv_thr = 1.0e-5 ,</span><br><span class="line"> mixing_beta = 0.1 ,</span><br><span class="line"> electron_maxstep = 130 ,</span><br><span class="line"> mixing_mode = &#x27;local-TF&#x27; ,</span><br><span class="line"> mixing_ndim = 12 ,</span><br><span class="line"> /</span><br><span class="line">! &amp;IONS /</span><br><span class="line">! &amp;CELL /</span><br><span class="line"></span><br><span class="line">ATOMIC_SPECIES</span><br><span class="line">   Co1   58.933200  Co.pbe-spn-kjpaw_psl.1.0.0.UPF</span><br><span class="line">   Co2   58.933200  Co.pbe-spn-kjpaw_psl.1.0.0.UPF</span><br><span class="line">   Sb    121.75000  Sb.pbe-dn-kjpaw_psl.1.0.0.UPF</span><br><span class="line">   Na    22.989770  Na.pbe-spnl-kjpaw_psl.1.0.0.UPF</span><br><span class="line">    O    16.000000  O.pbe-nl-kjpaw_psl.1.0.0.UPF</span><br><span class="line"></span><br><span class="line">K_POINTS automatic</span><br><span class="line">  2 2 2 0 0 0  </span><br><span class="line"></span><br><span class="line">ATOMIC_POSITIONS crystal_sg</span><br><span class="line"> Co1 0.25005000 0.00000000 0.41665000</span><br><span class="line"> Co2 0.75005000 0.00000000 0.91665000</span><br><span class="line"> Sb  0.25000000 0.00000000 0.75000000</span><br><span class="line">  O  0.62430000 0.79710000 0.44230000</span><br><span class="line">  O  0.39870000 0.20290000 0.21670000</span><br><span class="line">  O  0.12430000 0.79710000 0.94230000</span><br><span class="line">  O  0.89870000 0.20290000 0.71670000</span><br><span class="line">  O  0.87685000 0.20560000 0.37685000</span><br><span class="line">  O  0.37685000 0.20560000 0.87685000</span><br><span class="line"> Na  0.00000000 0.50000000 0.50000000</span><br><span class="line"> Na  0.50000000 0.50000000 0.00000000</span><br><span class="line"> Na  0.49440000 0.50000000 0.33520000</span><br><span class="line"> Na  0.99440000 0.50000000 0.83520000</span><br></pre></td></tr></table></figure>
+<p>It’s still don’t converge… Still so slow…(about 1.2h for each iteration)</p>
+<p>Note that the first iteration scf accuracy still &lt; 3000 Ry, I think maybe something is wrong with my structure settings. So I turn off the SOC, LDA+U and magnetic order settings, just calculate the unit cell of normal $Na_{3}Co_{2}SbO_{6}$.</p>
+<h3 id="3rd-Version"><a href="#3rd-Version" class="headerlink" title="3rd Version"></a>3rd Version</h3><p>This time, just calculate the nonmagnetic system. </p>
+<p>input file : </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line">! calculation = &#x27;vc-relax&#x27; ,</span><br><span class="line">  calculation = &#x27;scf&#x27; ,</span><br><span class="line">  restart_mode = &#x27;from_scratch&#x27; ,</span><br><span class="line">  outdir = &#x27;./tmp&#x27; ,</span><br><span class="line">  pseudo_dir = &#x27;/home/yaoshen/QEDATA/pslibrary.1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS&#x27; ,</span><br><span class="line">  prefix = &#x27;ncso&#x27; </span><br><span class="line">  etot_conv_thr=0.0001,</span><br><span class="line">  nstep=70</span><br><span class="line"> /</span><br><span class="line"> &amp;SYSTEM</span><br><span class="line">  space_group = 12,</span><br><span class="line">  A = 5.3681004872,</span><br><span class="line">  B = 5.6370003188,</span><br><span class="line">  C = 9.2849006184,</span><br><span class="line">  cosAB = 0 ,</span><br><span class="line">  cosBC = 0 ,</span><br><span class="line">  cosAC = -0.3174 ,</span><br><span class="line">  nat = 6,</span><br><span class="line">  ntyp = 4,</span><br><span class="line">! nbnd = 110,</span><br><span class="line">  ecutwfc = 45.0 ,</span><br><span class="line">  ecutrho = 450.0 ,</span><br><span class="line">  occupations = &#x27;tetrahedra_opt&#x27;,</span><br><span class="line">! occupations = &#x27;smearing&#x27; , degauss = 0.001 , smearing = &#x27;gauss&#x27; ,</span><br><span class="line">! nspin = 4,</span><br><span class="line">! starting_magnetization(1) = 1.0,</span><br><span class="line">! starting_magnetization(2) = -1.0,</span><br><span class="line">! lspinorb = .true.</span><br><span class="line">! noncolin = .true.</span><br><span class="line">! lda_plus_u=.true., lda_plus_u_kind=1,</span><br><span class="line">! Hubbard_U(1)=4.4, Hubbard_J(1,1)=0,</span><br><span class="line">! Hubbard_U(2)=4.4, Hubbard_J(1,2)=0</span><br><span class="line"> /</span><br><span class="line"> &amp;ELECTRONS</span><br><span class="line"> conv_thr = 1.0e-5 ,</span><br><span class="line"> mixing_beta = 0.8 ,</span><br><span class="line"> startingpot = &#x27;file&#x27;,</span><br><span class="line"> electron_maxstep = 130 ,</span><br><span class="line"> mixing_mode = &#x27;local-TF&#x27; ,</span><br><span class="line"> mixing_ndim = 12 ,</span><br><span class="line"> /</span><br><span class="line">! &amp;IONS /</span><br><span class="line">! &amp;CELL /</span><br><span class="line"></span><br><span class="line">ATOMIC_SPECIES</span><br><span class="line">   Co    58.933200  Co.pbe-spn-kjpaw_psl.1.0.0.UPF</span><br><span class="line">   Sb    121.75000  Sb.pbe-dn-kjpaw_psl.1.0.0.UPF</span><br><span class="line">   Na    22.989770  Na.pbe-spnl-kjpaw_psl.1.0.0.UPF</span><br><span class="line">    O    16.000000  O.pbe-nl-kjpaw_psl.1.0.0.UPF</span><br><span class="line"></span><br><span class="line">K_POINTS automatic</span><br><span class="line">  2 2 2 0 0 0  </span><br><span class="line"></span><br><span class="line">ATOMIC_POSITIONS crystal_sg</span><br><span class="line"> Co  0.00000000 0.00000000 0.66670000</span><br><span class="line"> Sb  0.00000000 0.00000000 0.00000000</span><br><span class="line">  O  0.27440000 0.79710000 0.34100000</span><br><span class="line">  O  0.24630000 0.20560000 0.50000000</span><br><span class="line"> Na  0.00000000 0.50000000 0.50000000</span><br><span class="line"> Na  0.50000000 0.50000000 0.32960000 </span><br></pre></td></tr></table></figure>
+<p>The calculation is even more weird…</p>
+<p><u>First iteration scf accuracy is about 2~3 Ry, but as iteration goes on, the accuracy is firstly decreasing, and then continuously going up, to 500 Ry finally</u>. And I just don’t know why. </p>
+<p>But have to confess that the calculation this time is raised a lot (about 5min for each iteration).</p>
+<h3 id="4th-Version"><a href="#4th-Version" class="headerlink" title="4th Version"></a>4th Version</h3><p>Searching the Internet, I found several useful advice for better convergence from <a target="_blank" rel="noopener" href="https://yyyu200.github.io/DFTbook/blogs/2019/06/27/converge/">here</a>. Listed them below.</p>
+<blockquote>
+<ol>
+<li><p>Lowering mixing_beta and increasing mixing_ndim.</p>
+<p>mixing_beta : 0.7 default, but try 0.1~0.3 or even smaller 0.05 for very long slab</p>
+<p>mixing_ndim : 8 default, but try 12</p>
+</li>
+<li><p>Raise ecutwfc and ecutrho.</p>
+</li>
+</ol>
+</blockquote>
+<p>In this way, make changes on the basis of above input file:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ecutwfc = 90.0 ,</span><br><span class="line">ecutrho = 900.0 ,</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mixing_beta = 0.5 ,</span><br></pre></td></tr></table></figure>
+<p>And the outcome is still weird. </p>
+<p>After the beginning reducing of scf accuracy, the calculation still failed to converge.</p>
+<p>The scf accuracy jumped between 0.002 and 0.00002 at last. There is still someing to do …</p>
+<h3 id="5th-Version"><a href="#5th-Version" class="headerlink" title="5th Version"></a>5th Version</h3><p>Searching the Internet, I find one possible solution here.</p>
+<p>(<a target="_blank" rel="noopener" href="https://mattermodeling.stackexchange.com/questions/6209/scf-calculation-not-converging-after-two-decimal-places-in-quantum-espresso">https://mattermodeling.stackexchange.com/questions/6209/scf-calculation-not-converging-after-two-decimal-places-in-quantum-espresso</a></p>
+<p>Where one of the answer remind me of changing <u>occupation</u>, i.e. :</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">! occupations = &#x27;tetrahedra_opt&#x27;,</span><br><span class="line">  occupations = &#x27;smearing&#x27; , degauss = 0.001 , smearing = &#x27;gauss&#x27; ,</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>At last, it converged! So I calculated DOS.</p>
+<img src="/2021/09/06/Convergence-Diary/2.png" class>
+<p>Comb-like sharp peaks appeared. This reminded me previous conditions that these peaks showed up when I do scf calculation using ‘occupation = tetrahedron’ instead of ‘occupation = tetrahedra_opt’. This means though ‘occupation = smearing’ may be a possible way to get convergence, I still need to try with <u>‘tetrahedra_opt’</u> .</p>
+<h3 id="6th-Version"><a href="#6th-Version" class="headerlink" title="6th Version"></a>6th Version</h3><p>So go back to 4th Version. </p>
+<p>First, try to run input file of 4th Version with ‘occupation = tetrahedra_opt’, the calculation stopped after 130 iterations, failing to get convergence. But the scf accuracy once reached 0.00002, close to conv_thr. Is it possible to make changes on the basis of it?</p>
+<p>So I increased ecutwfc, ecutrho and reduced the mixing_beta on the basis of 4th Version code.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ecutwfc = 100.0 ,</span><br><span class="line">ecutrho = 1000.0 ,</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mixing_beta = 0.3 ,</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nbnd = 120 ,</span><br></pre></td></tr></table></figure>
+<p>Still don’t converge!</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">daily life</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Quantum Espresso</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/09/06/Convergence-Diary/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2021/09/05/Quantum-Espresso-Note1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Quantum-Espresso_Note1</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -239,9 +399,9 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
